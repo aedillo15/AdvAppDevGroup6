@@ -13,6 +13,10 @@
 		ADCCE711270A6362006A26B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCCE710270A6362006A26B6 /* Preview Assets.xcassets */; };
 		ADCCE71C270A6363006A26B6 /* WalkItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCE71B270A6363006A26B6 /* WalkItTests.swift */; };
 		ADCCE727270A6363006A26B6 /* WalkItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCE726270A6363006A26B6 /* WalkItUITests.swift */; };
+		CE0997A1270B973B0064069D /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0997A0270B973B0064069D /* MapScreen.swift */; };
+		CE10B215272CA66A00030E7E /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10B214272CA66A00030E7E /* SettingsScreen.swift */; };
+		CE10B217272CA6D800030E7E /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10B216272CA6D800030E7E /* Token.swift */; };
+		CE10B219272CA81D00030E7E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10B218272CA81D00030E7E /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		ADCCE722270A6363006A26B6 /* WalkItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCCE726270A6363006A26B6 /* WalkItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkItUITests.swift; sourceTree = "<group>"; };
 		ADCCE728270A6363006A26B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0997A0270B973B0064069D /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		CE10B214272CA66A00030E7E /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		CE10B216272CA6D800030E7E /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		CE10B218272CA81D00030E7E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +103,10 @@
 		ADCCE708270A635F006A26B6 /* WalkIt */ = {
 			isa = PBXGroup;
 			children = (
+				CE10B213272CA5B900030E7E /* Controllers */,
+				CE10B212272CA5B100030E7E /* Views */,
+				CE10B211272CA5A300030E7E /* Models */,
 				ADCCE709270A635F006A26B6 /* WalkItApp.swift */,
-				ADCCE70B270A635F006A26B6 /* ContentView.swift */,
 				ADCCE70D270A6362006A26B6 /* Assets.xcassets */,
 				ADCCE712270A6362006A26B6 /* Info.plist */,
 				ADCCE70F270A6362006A26B6 /* Preview Content */,
@@ -128,6 +138,32 @@
 				ADCCE728270A6363006A26B6 /* Info.plist */,
 			);
 			path = WalkItUITests;
+			sourceTree = "<group>";
+		};
+		CE10B211272CA5A300030E7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE10B216272CA6D800030E7E /* Token.swift */,
+				CE10B218272CA81D00030E7E /* Player.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE10B212272CA5B100030E7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADCCE70B270A635F006A26B6 /* ContentView.swift */,
+				CE0997A0270B973B0064069D /* MapScreen.swift */,
+				CE10B214272CA66A00030E7E /* SettingsScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE10B213272CA5B900030E7E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE10B215272CA66A00030E7E /* SettingsScreen.swift in Sources */,
+				CE10B217272CA6D800030E7E /* Token.swift in Sources */,
+				CE0997A1270B973B0064069D /* MapScreen.swift in Sources */,
 				ADCCE70C270A635F006A26B6 /* ContentView.swift in Sources */,
+				CE10B219272CA81D00030E7E /* Player.swift in Sources */,
 				ADCCE70A270A635F006A26B6 /* WalkItApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
