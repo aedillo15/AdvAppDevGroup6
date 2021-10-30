@@ -17,7 +17,7 @@ struct ContentView: View {
                 NavigationLink(destination: MapScreen(), tag: 1, selection: $screenSelection) {}
                 NavigationLink(destination: SettingsScreen(), tag: 2, selection: $screenSelection) {}
 
-                Text("Home Page")
+                Text("This page is the menu.")
                     .padding()
                 
                 Button(action: {
