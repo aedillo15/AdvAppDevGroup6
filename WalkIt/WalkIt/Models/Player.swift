@@ -10,11 +10,9 @@ import Foundation
 struct Player: Hashable{
     var id = UUID()
     var username: String = ""
+    var tokenCount : Int = 0 // Number of tokens (score) the player has
     var email: String = ""
     var password: String = ""
-    var tokenCount : Int = 0 // Number of tokens (score) the player has
-    var xPos : Double = 0
-    var yPos : Double = 0
 
     
     init() {
