@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Player{
+class Player: ObservableObject{
     var id = UUID()
     var username: String = ""
     var tokenCount : Int = 0 // Number of tokens (score) the player has

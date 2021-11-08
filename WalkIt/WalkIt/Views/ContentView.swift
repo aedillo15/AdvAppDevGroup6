@@ -58,7 +58,7 @@ struct ContentView: View {
                 Button(action: {
                         self.screenSelection = 2;
                 }){
-                    Text("Nav to settings Screen")
+                    Text("Edit Profile")
                         .foregroundColor(Color.white)
                         .font(.title2)
                         .padding(10)
