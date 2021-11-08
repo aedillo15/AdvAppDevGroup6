@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Player: ObservableObject{
+struct Player: Hashable{
     var id = UUID()
     var username: String = ""
     var tokenCount : Int = 0 // Number of tokens (score) the player has
@@ -19,11 +19,13 @@ class Player: ObservableObject{
         
     }
     
-    init(username: String, email: String, password: String) {
-
-        self.tokenCount = 0
-        self.username = username
+    init(  xPos: Double, yPos: Double, username: String, email: String, password: String, id: UUID) {
+        self.id = id
         self.email = email
         self.password = password
+        self.xPos = xPos
+        self.yPos = yPos
+        self.tokenCount = 0
+        
     }
 }
