@@ -9,21 +9,21 @@ import Foundation
 
 struct Player{
     var id = UUID()
-    var name: String = ""
+    var username: String = ""
     var tokenCount : Int = 0 // Number of tokens (score) the player has
-    var xPos : Double = 0
-    var yPos : Double = 0
+    var email: String = ""
+    var password: String = ""
 
     
     init() {
         
     }
     
-    init(xPos: Double, yPos: Double, name: String) {
-        self.xPos = xPos
-        self.yPos = yPos
+    init(username: String, email: String, password: String) {
+
         self.tokenCount = 0
-        self.name = name
-        
+        self.username = username
+        self.email = email
+        self.password = password
     }
 }

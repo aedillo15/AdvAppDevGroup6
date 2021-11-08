@@ -17,6 +17,8 @@ struct ContentView: View {
             VStack(spacing: 1){
                 NavigationLink(destination: MapScreen(), tag: 1, selection: $screenSelection) {}
                 NavigationLink(destination: SettingsScreen(), tag: 2, selection: $screenSelection) {}
+                NavigationLink(destination: SignUpView(), tag: 3, selection: $screenSelection) {}
+                NavigationLink(destination: LoginView(), tag: 4, selection: $screenSelection) {}
                 Text("WalkIt")
                     .padding(10)
                     .font(.system(size: 80))
@@ -24,17 +26,34 @@ struct ContentView: View {
                     .background(Color.orange)
                     .cornerRadius(15)
                 Spacer()
-                
-                Button(action: {
-                        self.screenSelection = 1;
-                }){
-                    Text("Play     ")
-                        .foregroundColor(Color.white)
-                        .font(.title2)
-                        .padding(10)
+                HStack {
+                    Button(action: {
+                            self.screenSelection = 3;
+                    }){
+                        Text("Sign Up     ")
+                            .foregroundColor(Color.white)
+                            .font(.title2)
+                            .padding(10)
+                    }
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    .padding(20)
+                    
+                    Button(action: {
+                            self.screenSelection = 4;
+                    }){
+                        Text("Login     ")
+                            .foregroundColor(Color.white)
+                            .font(.title2)
+                            .padding(10)
+                    }
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    .padding(20)
+                    
                 }
-                .background(Color.blue)
-                .cornerRadius(15)
+                
+                
                 Spacer()
                 Button(action: {
                         self.screenSelection = 2;
