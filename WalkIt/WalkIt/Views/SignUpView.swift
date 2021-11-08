@@ -41,7 +41,7 @@ struct SignUpView: View {
                     
                     if (self.validateEmptyData()){
                         print(#function, "Account created successfully")
-                            
+                            //Add new player into DB
                         self.selection = 1
 
                     }else{
