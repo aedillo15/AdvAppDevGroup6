@@ -19,7 +19,6 @@
 		CE10B219272CA81D00030E7E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10B218272CA81D00030E7E /* Player.swift */; };
 		CE498B9E27398FAC00D031B7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE498B9D27398FAC00D031B7 /* LoginView.swift */; };
 		CE498BA027398FBB00D031B7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE498B9F27398FBB00D031B7 /* SignUpView.swift */; };
-		CEB6E85B2739973800F79F91 /* CoreDataUser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEB6E8592739972D00F79F91 /* CoreDataUser.xcdatamodeld */; };
 		CEB6E85D2739985700F79F91 /* Presistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6E85C2739985700F79F91 /* Presistence.swift */; };
 		CEB6E85F273999FD00F79F91 /* CoreDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6E85E273999FD00F79F91 /* CoreDBHelper.swift */; };
 		CEB6E86127399BF600F79F91 /* PlayerMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6E86027399BF600F79F91 /* PlayerMO.swift */; };
@@ -176,7 +175,6 @@
 		CE10B213272CA5B900030E7E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CEB6E8592739972D00F79F91 /* CoreDataUser.xcdatamodeld */,
 				CEB6E85C2739985700F79F91 /* Presistence.swift */,
 				CEB6E85E273999FD00F79F91 /* CoreDBHelper.swift */,
 			);
@@ -312,7 +310,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB6E85B2739973800F79F91 /* CoreDataUser.xcdatamodeld in Sources */,
 				CE10B215272CA66A00030E7E /* SettingsScreen.swift in Sources */,
 				CE498B9E27398FAC00D031B7 /* LoginView.swift in Sources */,
 				CEB6E85F273999FD00F79F91 /* CoreDBHelper.swift in Sources */,
@@ -643,17 +640,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		CEB6E8592739972D00F79F91 /* CoreDataUser.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-			);
-			path = CoreDataUser.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = ADCCE6FE270A635F006A26B6 /* Project object */;
 }
