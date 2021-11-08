@@ -7,7 +7,7 @@
 
 import Foundation
 import CoreData
-//MVC - Controller
+
 
 class CoreDBHelper : ObservableObject{
     
@@ -29,4 +29,74 @@ class CoreDBHelper : ObservableObject{
     init(context: NSManagedObjectContext) {
         self.MOC = context
     }
+    
+    func insertPlayer(newPlayer: Player){
+        do{
+            
+            
+            let playerInsert = NSEntityDescription.insertNewObject(forEntityName: self.ENTITY_NAME, into: self.MOC) as! PlayerMO
+            
+           
+            playerInsert.username = newPlayer.username
+            playerInsert.email = newPlayer.email
+            playerInsert.password = newPlayer.password
+            playerInsert.id = UUID()
+            
+            
+            if self.MOC.hasChanges{
+                try self.MOC.save()
+                print(#function, "Player has been added")
+            }
+            
+        }catch let error as NSError{
+            print(#function, "Player has not been added  \(error)")
+        }
+    }
+    
+    private func searchPlayer(playerID : UUID) -> PlayerMO?{
+        
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: ENTITY_NAME)
+        let predicateID = NSPredicate(format: "id == %@", playerID as CVarArg)
+
+        fetchRequest.predicate = predicateID
+        
+        do{
+            let result = try self.MOC.fetch(fetchRequest)
+            
+            if result.count > 0{
+                return result.first as? PlayerMO
+            }
+            
+        }catch let error as NSError{
+            print(#function, "Unable to search for given ID \(error)")
+        }
+        
+        return nil
+    }
+    
+    func updatePlayer(updatedPlayer: PlayerMO){
+        let searchResult = self.searchPlayer(playerID: updatedPlayer.id! as UUID)
+        
+        if (searchResult != nil){
+            do{
+                
+                let playerToUpdate = searchResult!
+                playerToUpdate.username = updatedPlayer.username
+                playerToUpdate.email = updatedPlayer.email
+                playerToUpdate.password = updatedPlayer.password
+                
+                try self.MOC.save()
+                
+                print(#function, "Player details updated successfully")
+                
+            }catch let error as NSError{
+                print(#function, "Unable to search for given ID \(error)")
+            }
+        }else{
+            print(#function, "No matching record found for given playerID \(updatedPlayer.id!)")
+        }
+    }
+    
+    
 }
