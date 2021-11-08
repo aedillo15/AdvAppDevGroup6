@@ -19,8 +19,7 @@ class Player: ObservableObject{
         
     }
     
-    init( username: String, email: String, password: String, id: UUID) {
-        self.id = id
+    init( username: String, email: String, password: String) {
         self.username = username
         self.email = email
         self.password = password

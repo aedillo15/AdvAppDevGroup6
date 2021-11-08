@@ -16,6 +16,8 @@ struct SignUpView: View {
     @State private var selection: Int? = nil
     @State private var invalidLogin: Bool = false
     @State private var alertMessage = ""
+    @EnvironmentObject var coreDBHelper: CoreDBHelper
+
     
     var body: some View {
         
@@ -41,7 +43,7 @@ struct SignUpView: View {
                     
                     if (self.validateEmptyData()){
                         print(#function, "Account created successfully")
-                            //Add new player into DB
+                        self.addPlayer()
                         self.selection = 1
 
                     }else{
@@ -79,6 +81,10 @@ struct SignUpView: View {
 
         
         return true
+    }
+    
+    private func addPlayer(){
+        self.coreDBHelper.insertPlayer(newPlayer: Player(username: self.tfName, email: self.tfEmail, password: self.tfPassword))
     }
 
 }

@@ -23,6 +23,7 @@
 		CEB6E85D2739985700F79F91 /* Presistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6E85C2739985700F79F91 /* Presistence.swift */; };
 		CEB6E85F273999FD00F79F91 /* CoreDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6E85E273999FD00F79F91 /* CoreDBHelper.swift */; };
 		CEB6E86127399BF600F79F91 /* PlayerMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6E86027399BF600F79F91 /* PlayerMO.swift */; };
+		CEF4AA7B2739C17800455315 /* PlayerDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEF4AA792739C17800455315 /* PlayerDB.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		CEB6E85C2739985700F79F91 /* Presistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presistence.swift; sourceTree = "<group>"; };
 		CEB6E85E273999FD00F79F91 /* CoreDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDBHelper.swift; sourceTree = "<group>"; };
 		CEB6E86027399BF600F79F91 /* PlayerMO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerMO.swift; sourceTree = "<group>"; };
+		CEF4AA7A2739C17800455315 /* PlayerDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlayerDB.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				ADCCE70D270A6362006A26B6 /* Assets.xcassets */,
 				ADCCE712270A6362006A26B6 /* Info.plist */,
 				ADCCE70F270A6362006A26B6 /* Preview Content */,
+				CEF4AA792739C17800455315 /* PlayerDB.xcdatamodeld */,
 			);
 			path = WalkIt;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				CE10B217272CA6D800030E7E /* Token.swift in Sources */,
 				CE0997A1270B973B0064069D /* MapScreen.swift in Sources */,
 				CEB6E86127399BF600F79F91 /* PlayerMO.swift in Sources */,
+				CEF4AA7B2739C17800455315 /* PlayerDB.xcdatamodeld in Sources */,
 				CE498BA027398FBB00D031B7 /* SignUpView.swift in Sources */,
 				ADCCE70C270A635F006A26B6 /* ContentView.swift in Sources */,
 				CE10B219272CA81D00030E7E /* Player.swift in Sources */,
@@ -649,8 +653,17 @@
 			isa = XCVersionGroup;
 			children = (
 			);
-			name = CoreDataUser.xcdatamodeld;
-			path = ../CoreDataUser.xcdatamodeld;
+			path = CoreDataUser.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		CEF4AA792739C17800455315 /* PlayerDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEF4AA7A2739C17800455315 /* PlayerDB.xcdatamodel */,
+			);
+			currentVersion = CEF4AA7A2739C17800455315 /* PlayerDB.xcdatamodel */;
+			path = PlayerDB.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
