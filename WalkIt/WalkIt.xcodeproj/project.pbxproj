@@ -17,6 +17,8 @@
 		CE10B215272CA66A00030E7E /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10B214272CA66A00030E7E /* SettingsScreen.swift */; };
 		CE10B217272CA6D800030E7E /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10B216272CA6D800030E7E /* Token.swift */; };
 		CE10B219272CA81D00030E7E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10B218272CA81D00030E7E /* Player.swift */; };
+		CE498B9E27398FAC00D031B7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE498B9D27398FAC00D031B7 /* LoginView.swift */; };
+		CE498BA027398FBB00D031B7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE498B9F27398FBB00D031B7 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		CE10B214272CA66A00030E7E /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		CE10B216272CA6D800030E7E /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		CE10B218272CA81D00030E7E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		CE498B9D27398FAC00D031B7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CE498B9F27398FBB00D031B7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 				ADCCE70B270A635F006A26B6 /* ContentView.swift */,
 				CE0997A0270B973B0064069D /* MapScreen.swift */,
 				CE10B214272CA66A00030E7E /* SettingsScreen.swift */,
+				CE498B9D27398FAC00D031B7 /* LoginView.swift */,
+				CE498B9F27398FBB00D031B7 /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,8 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE10B215272CA66A00030E7E /* SettingsScreen.swift in Sources */,
+				CE498B9E27398FAC00D031B7 /* LoginView.swift in Sources */,
 				CE10B217272CA6D800030E7E /* Token.swift in Sources */,
 				CE0997A1270B973B0064069D /* MapScreen.swift in Sources */,
+				CE498BA027398FBB00D031B7 /* SignUpView.swift in Sources */,
 				ADCCE70C270A635F006A26B6 /* ContentView.swift in Sources */,
 				CE10B219272CA81D00030E7E /* Player.swift in Sources */,
 				ADCCE70A270A635F006A26B6 /* WalkItApp.swift in Sources */,
